@@ -1,0 +1,24 @@
+[package]
+name = "test_javafx"
+version = "0.1.0"
+authors = ["Supot Chainiramitkul <bingli224@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+jni = { version = '0.16.0', features = [ 'invocation' ] }
+
+[[bin]]
+name = 'test_javafx'
+path = 'src/rust/main.rs'
+test = true
+doctest = true
+bench = true
+doc = true
+edition = '2018'
+
+#[lib]
+#name = 'test_javafx'
+#crate_type = [ "cdylib" ]
+#path = 'src/rust/main.rs'
